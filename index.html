@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ma'am Karen</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Happy Teacher's day Ma'am Karen</h1>
+
+  </header>
+<div class="container">
+
+  <div class="main-content">
+    <div class="bg">
+      <h1>About</h1>
+
+      <div class="header">
+        <img src="MaaamKaren.jpg" alt="MaaamKaren" class="header-image">
+        <div class="header-text">
+          <h1>Who is Ma'am Karen?</h1>
+          <p>Ma'am Karen is...</p>
+          <ul>
+            <li>an icon</li>
+            <li>A computer science teacher</li>
+            <li>"gurl"</li>
+            <li>aussie kween</li>
+            <li>veeerrrrryyyyy patient</li>
+            <li>enduring us for 2 years</li>
+            <li>pisay graduate btw</li>
+            <li>has a master's degree btw</li>
+            <li>pretty btw</li>
+            <li>6'7 btw</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2>Dear Ma’am..</h2>
+    <div class="boxes" id="letterBoxes">
+      <div class="box">Maam Karen I love you, and I know you love CS, but I'm not sure if any of us can love CS as much as we love you -yesha</div>
+    </div>
+
+    <!-- Form to add new letter -->
+    <form id="letterForm">
+      <textarea id="letterInput" placeholder="Write your letter here..." required></textarea>
+      <button type="submit">Submit Letter</button>
+    </form>
+  </aside>
+
+</div>
+
+<script>
+  // Handle form submission
+  const form = document.getElementById('letterForm');
+  const input = document.getElementById('letterInput');
+  const letterBoxes = document.getElementById('letterBoxes');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const newLetter = input.value.trim();
+    if (newLetter !== "") {
+      const box = document.createElement('div');
+      box.classList.add('box');
+      box.textContent = newLetter;
+      letterBoxes.appendChild(box);
+      input.value = "";
+    }
+  });
+</script>
+
+<footer>
+  <p>&copy; 2025 Teachers Day for Ma'am Karen. <br> Made by Lithium Batch 2029 S.Y. 2025-2026 <br>All rights reserved.</p>
+</footer>
+
+</body>
+</html>
