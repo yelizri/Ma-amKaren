@@ -33,7 +33,6 @@ body {
   border-radius: 10px;
 }
 
-/* Sidebar (right) */
 .sidebar {
   flex: 1;
   background: #fdfdfd;
@@ -88,7 +87,6 @@ body {
   background: #f5f5f5;
 }
 
-/* Form */
 #letterForm {
   display: flex;
   flex-direction: column;
@@ -124,3 +122,4 @@ footer {
     clear: both;
     margin-top: 20px;
 }
+
